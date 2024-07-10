@@ -37,7 +37,7 @@ resource "aws_subnet" "Public2" {
 resource "aws_subnet" "Private1" {
   vpc_id                  = aws_vpc.TF_VPC.id
   cidr_block              = "10.10.3.0/24"
-  availability_zone       = "us-east-1a"
+  availability_zone       = "us-east-1c"
   map_public_ip_on_launch = false
 
   tags = {
@@ -49,7 +49,7 @@ resource "aws_subnet" "Private1" {
 resource "aws_subnet" "Private2" {
   vpc_id                  = aws_vpc.TF_VPC.id
   cidr_block              = "10.10.4.0/24"
-  availability_zone       = "us-east-1b"
+  availability_zone       = "us-east-1d"
   map_public_ip_on_launch = false
 
   tags = {
